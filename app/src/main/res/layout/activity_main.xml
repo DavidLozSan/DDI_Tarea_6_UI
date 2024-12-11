@@ -9,25 +9,26 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
-
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:fitsSystemWindows="true">
-
-    <com.google.android.material.appbar.CollapsingToolbarLayout
-        style="?attr/collapsingToolbarLayoutMediumStyle"
         android:layout_width="match_parent"
-        android:layout_height="?attr/collapsingToolbarLayoutMediumSize">
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
 
-        <com.google.android.material.appbar.MaterialToolbar
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:elevation="0dp"/>
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true">
 
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:menu="@menu/menu_toolbar"
+                app:subtitle="@string/time_until_next_alarm"
+                app:title="@string/App_bar_layout_tittle" />
 
-    </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
 
-</com.google.android.material.appbar.AppBarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
     <TextView
         android:layout_width="wrap_content"
