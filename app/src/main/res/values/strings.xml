@@ -1,7 +1,14 @@
 <resources>
     <string name="app_name">DDI_Tarea_6_UI</string>
     <string name="App_bar_layout_tittle">Alarma</string>
-    <string name="more">More</string>
+    <string name="edit">Editar</string>
+    <string name="settings">Ajustes</string>
     <string name="time_until_next_alarm">Sonar en 5 horas 58 minutos</string>
     <string name="item_alarm">Alarma</string>
+    <string name="item_language">Reloj mundial</string>
+    <string name="item_timer">Cronómetro</string>
+    <string name="item_hourglass">Temporizador</string>
+    <string name="name_file_xml">alarms</string>
+    <string name="alarm_title">título</string>
+    <string name="alarm_description">descripción</string>
 </resources>

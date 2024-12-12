@@ -1,10 +1,10 @@
-package edu.iesam.ddi_tarea_6_ui.presentation.adapter
+package edu.iesam.ddi_tarea_6_ui.features.alarm.presentation.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import edu.iesam.ddi_tarea_6_ui.R
-import edu.iesam.ddi_tarea_6_ui.domain.Alarm
+import edu.iesam.ddi_tarea_6_ui.features.alarm.domain.Alarm
 
 class AlarmAdapter : ListAdapter<Alarm, AlarmViewHolder>(AlarmDiffUtil()) {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AlarmViewHolder {

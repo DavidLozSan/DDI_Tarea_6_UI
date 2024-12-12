@@ -2,4 +2,8 @@
 <resources>
     <dimen name="padding_parent">16dp</dimen>
     <dimen name="margin_half">8dp</dimen>
+    <dimen name="collapsed_title">18sp</dimen>
+    <dimen name="expanded_title">24sp</dimen>
+    <dimen name="subtitle">14sp</dimen>
+    SubtitleStyle
 </resources>

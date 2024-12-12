@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/item_alarm"
+        android:id="@+id/itemAlarm"
         android:icon="@drawable/round_more_vert_24"
-        android:title="@string/item_alarm"
-        />
+        android:title="@string/item_alarm" />
+
+    <item
+        android:id="@+id/itemLanguage"
+        android:icon="@drawable/baseline_language_24"
+        android:title="@string/item_language" />
+
+    <item
+        android:id="@+id/itemTimer"
+        android:icon="@drawable/baseline_timer_24"
+        android:title="@string/item_timer" />
+
+    <item
+        android:id="@+id/itemHourglass"
+        android:icon="@drawable/baseline_hourglass_empty_24"
+        android:title="@string/item_hourglass" />
 </menu>

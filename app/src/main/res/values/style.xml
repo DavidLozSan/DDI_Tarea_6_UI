@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Toolbar" parent="AppTheme">
+        <item name="android:background">@color/md_theme_primary</item>
+        <item name="android:textColor">@color/md_theme_onPrimary</item>
+    </style>
+
+    <style name="CollapsedTitleStyle" parent="AppTheme">
+        <item name="android:textSize">@dimen/collapsed_title</item>
+        <item name="android:textColor">@color/md_theme_onPrimary</item>
+    </style>
+
+    <style name="ExpandedTitleStyle" parent="AppTheme">
+        <item name="android:textSize">@dimen/expanded_title</item>
+        <item name="android:textColor">@color/md_theme_onPrimary</item>
+    </style>
+
+    <style name="Container" parent="AppTheme">
+        <item name="android:background">@color/md_theme_secondaryContainer</item>
+    </style>
+
+    <style name="CardViewStyle" parent="AppTheme">
+        <item name="android:background">@color/md_theme_tertiaryContainer</item>
+    </style>
+
+    <style name="CardViewTitleStyle" parent="AppTheme">
+        <item name="android:textSize">@dimen/expanded_title</item>
+        <item name="android:textColor">@color/md_theme_onTertiaryContainer</item>
+    </style>
+
+    <style name="CardViewSubtitleStyle" parent="AppTheme">
+        <item name="android:textSize">@dimen/subtitle</item>
+        <item name="android:textColor">@color/md_theme_onTertiaryContainer</item>
+    </style>
+
+
+</resources>
