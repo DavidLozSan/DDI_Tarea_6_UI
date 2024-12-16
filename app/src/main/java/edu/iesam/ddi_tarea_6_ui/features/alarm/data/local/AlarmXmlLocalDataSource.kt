@@ -17,19 +17,18 @@ class AlarmXmlLocalDataSource(private val context: Context) {
     fun getAlarms(): List<Alarm> {
         val alarmJson = sharedPref.getString("alarms", null)
         return if (alarmJson.isNullOrEmpty()) {
-            // Agregar alarmas predeterminadas al archivo de preferencias
             val defaultAlarms = listOf(
-                Alarm(id = "1", title = "7:30", description = "Sonar una vez | Alarma despertador",false),
-                Alarm(id = "2", title = "9:00", description = "Sonar una vez | Reunión de trabajo", false),
-                Alarm(id = "3", title = "18:00", description = "Sonar una vez | Clase de yoga", false),
-                Alarm(id = "4", title = "20:00", description = "Sonar una vez | Medicamentos", false),
-                Alarm(id = "5", title = "10:00", description = "Sonar una vez | Cumpleaños de Ana", false),
-                Alarm(id = "6", title = "18:00", description = "Sonar una vez | Clase de yoga", false),
-                Alarm(id = "7", title = "20:00", description = "Sonar una vez | Medicamentos", false),
-                Alarm(id = "8", title = "10:00", description = "Sonar una vez | Cumpleaños de Ana", false),
-                Alarm(id = "9", title = "18:00", description = "Sonar una vez | Clase de yoga",false),
-                Alarm(id = "10", title = "20:00", description = "Sonar una vez | Medicamentos", false),
-                Alarm(id = "11", title = "10:00", description = "Sonar una vez | Cumpleaños de Ana", false),
+                Alarm(id = "1", title = "07:30", "Sonar una vez |","Despertador diario", true),
+                Alarm(id = "2", title = "08:00", "Sonar una vez |" ,"Preparar desayuno", false),
+                Alarm(id = "3", title = "09:00", "Sonar una vez |", "Reunión de trabajo", true),
+                Alarm(id = "4", title = "12:00", "Sonar una vez |","Llamada con cliente", true),
+                Alarm(id = "5", title = "15:30", "Sonar una vez |", "Recoger a los niños", false),
+                Alarm(id = "6", title = "17:00", "Sonar una vez |", "Cita con el dentista", false),
+                Alarm(id = "7", title = "18:00", "Sonar una vez |", "Clase de yoga", true),
+                Alarm(id = "8", title = "19:00", "Sonar una vez |", "Ir al supermercado", false),
+                Alarm(id = "9", title = "20:00", "Sonar una vez |", "Tomar medicamentos", false),
+                Alarm(id = "10", title = "21:30","Sonar una vez |", "Leer un libro", true),
+                Alarm(id = "11", title = "23:00","Sonar una vez |", "Ir a la cama", true)
             )
             saveDefaultAlarms(defaultAlarms)
             defaultAlarms

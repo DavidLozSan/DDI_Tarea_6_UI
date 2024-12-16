@@ -22,17 +22,15 @@
 
     <style name="CardViewStyle" parent="AppTheme">
         <item name="android:background">@color/md_theme_tertiaryContainer</item>
+        <item name="android:textColor">@color/md_theme_onTertiaryContainer</item>
     </style>
 
     <style name="CardViewTitleStyle" parent="AppTheme">
         <item name="android:textSize">@dimen/expanded_title</item>
-        <item name="android:textColor">@color/md_theme_onTertiaryContainer</item>
     </style>
 
     <style name="CardViewSubtitleStyle" parent="AppTheme">
         <item name="android:textSize">@dimen/subtitle</item>
-        <item name="android:textColor">@color/md_theme_onTertiaryContainer</item>
     </style>
-
 
 </resources>

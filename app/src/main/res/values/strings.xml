@@ -11,4 +11,5 @@
     <string name="name_file_xml">alarms</string>
     <string name="alarm_title">título</string>
     <string name="alarm_description">descripción</string>
+    <string name="alarm_time_it_sounds">time it sounds</string>
 </resources>

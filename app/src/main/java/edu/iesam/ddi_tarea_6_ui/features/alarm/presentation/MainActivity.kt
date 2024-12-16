@@ -1,6 +1,7 @@
 package edu.iesam.ddi_tarea_6_ui.features.alarm.presentation
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -13,7 +14,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var alarmFactory: AlarmFactory
     private lateinit var viewModel: MainActivityViewModel
-    private val alarmAdapter = AlarmAdapter()
+    private val alarmAdapter = AlarmAdapter(this@MainActivity)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,5 +49,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun bind(alarms: List<Alarm>) {
         alarmAdapter.submitList(alarms)
+        binding.apply {
+            fab.setOnClickListener {
+                Toast.makeText(this@MainActivity, "Añadir nueva alarma", Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 }
